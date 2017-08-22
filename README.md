@@ -1,5 +1,12 @@
 # Crypto Notes
 
+## To do
+- favicon
+- logo
+- make nav always expanded
+- markdown extensions
+- add analytics?
+
 ## Topics
 
 ### Basics

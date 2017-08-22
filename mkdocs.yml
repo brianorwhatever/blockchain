@@ -1,0 +1,35 @@
+# project info
+site_name: Crypto Notes
+site_description: 'My notes on cryptocurrencies'
+site_author: 'Jordan McKinney'
+site_url: 'https://jordanmmck.github.io/crypto_notes'
+
+# repo
+repo_name: 'jordanmmck/crypto_notes'
+repo_url: 'https://github.com/jordanmmck/crypto_notes'
+
+# theme
+theme: material
+site_favicon: 'img/favicon.png'
+
+# layout
+docs_dir: Notes
+pages:
+- Home: 'index.md'
+- General:
+    - 'Hashing': 'money.md'
+    - 'Cryptography': 'money.md'
+- Bitcoin:
+    - 'Money': 'money.md'
+    - 'Markets': 'markets.md'
+- Ethereum:
+    - 'Money': 'money.md'
+    - 'Markets': 'markets.md'
+
+# options
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/jordanmmck'
+    - type: 'linkedin'
+      link: 'https://linkedin.com/in/jordanmmckinney'
