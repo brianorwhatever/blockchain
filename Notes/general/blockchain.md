@@ -2,6 +2,8 @@
 
 A blockchain is a distributed, secure database or ledger. A blockchain can store transaction data or any other data you want.
 
+An interesting aspect of a blockchain is that it is *ordered*. With most data structures it isn't really a sensible question to ask which part of the data structure was created first. Blockchains actually must be constructed in a particular order. Therefore they have some aspect of time encoded into them.
+
 ## Basic idea
 
 Take some chunk or 'block' of data, compute the hash for it, now take that hash value and put it in the next block. Repeat the process for each new block. Now anyone who looks at this sequence of blocks can be sure of their order of creation, as well as the contents of each block being unaltered in any way after the chain was created.
