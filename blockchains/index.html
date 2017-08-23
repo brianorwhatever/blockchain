@@ -279,9 +279,41 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Blockchains
+      </label>
+    
     <a href="./" title="Blockchains" class="md-nav__link md-nav__link--active">
       Blockchains
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conceptualisation" title="Conceptualisation" class="md-nav__link">
+    Conceptualisation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-idea" title="Basic idea" class="md-nav__link">
+    Basic idea
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -378,6 +410,27 @@
   
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conceptualisation" title="Conceptualisation" class="md-nav__link">
+    Conceptualisation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-idea" title="Basic idea" class="md-nav__link">
+    Basic idea
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -391,7 +444,10 @@
                 
                   <h1>Blockchains</h1>
                 
-                <p>Take some chunk or 'block' of data, compute the hash for it, now take that hash value and put it in the next block. Repeat the process for each new block. Now anyone who looks at this sequence of blocks can be sure of their order of creation, as well as the contents of each block being unaltered in any way after the chain was created.</p>
+                <h2 id="conceptualisation">Conceptualisation</h2>
+<p>A blockchain is a distributed, secure database or ledger. A blockchain can store transaction data or any other data you want.</p>
+<h2 id="basic-idea">Basic idea</h2>
+<p>Take some chunk or 'block' of data, compute the hash for it, now take that hash value and put it in the next block. Repeat the process for each new block. Now anyone who looks at this sequence of blocks can be sure of their order of creation, as well as the contents of each block being unaltered in any way after the chain was created.</p>
 <p>Assuming the hash of at least the newest block is published somewhere trusted, then if an attacker tries to send you a copy of the blockchain with even a single bit changed in <em>any</em> block, no matter how far back, the hashes of all blocks following the change will not match.</p>
 <p>In addition to the previous block's hash, a block can contain any kind of data you want. In the case of Bitcoin the blocks contain transaction data. Attackers cannot go back to an old block and change a transaction, because doing so would cause all following block hashes to change. A blockchain could be made to store contracts, records of events, patents or anything else where having an unaltered history matters.</p>
 <p>This data structure can serve as a sort of shared database. It would be nice however, to have some way of knowing your blockchain, your database, was correct without having to trust a hash value from <em>anyone</em>. And there should be some way of knowing you have the correct blockchain that everyone else is using without having to trust some central authority to keep track of this. Bitcoin very elegantly solves both of these problems.</p>
