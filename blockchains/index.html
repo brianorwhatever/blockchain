@@ -10,7 +10,7 @@
         <meta name="description" content="My notes on cryptocurrencies">
       
       
-        <link rel="canonical" href="https://jordanmmck.com/crypto_notes/markets/">
+        <link rel="canonical" href="https://jordanmmck.com/crypto_notes/blockchains/">
       
       
         <meta name="author" content="Jordan McKinney">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Markets - Crypto Notes</title>
+        <title>Blockchains - Crypto Notes</title>
       
     
     
@@ -85,7 +85,7 @@
                 </span>
               
             
-            Markets
+            Blockchains
           
         </span>
       </div>
@@ -223,18 +223,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-    <a href="./" title="Markets" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../markets/" title="Markets" class="md-nav__link">
       Markets
     </a>
-    
   </li>
 
         
@@ -278,11 +271,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../blockchains/" title="Blockchains" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+    <a href="./" title="Blockchains" class="md-nav__link md-nav__link--active">
       Blockchains
     </a>
+    
   </li>
 
         
@@ -389,9 +389,12 @@
               
                 
                 
-                  <h1>Markets</h1>
+                  <h1>Blockchains</h1>
                 
-                
+                <p>Take some chunk or 'block' of data, compute the hash for it, now take that hash value and put it in the next block. Repeat the process for each new block. Now anyone who looks at this sequence of blocks can be sure of their order of creation, as well as the contents of each block being unaltered in any way after the chain was created.</p>
+<p>Assuming the hash of at least the newest block is published somewhere trusted, then if an attacker tries to send you a copy of the blockchain with even a single bit changed in <em>any</em> block, no matter how far back, the hashes of all blocks following the change will not match.</p>
+<p>In addition to the previous block's hash, a block can contain any kind of data you want. In the case of Bitcoin the blocks contain transaction data. Attackers cannot go back to an old block and change a transaction, because doing so would cause all following block hashes to change. A blockchain could be made to store contracts, records of events, patents or anything else where having an unaltered history matters.</p>
+<p>This data structure can serve as a sort of shared database. It would be nice however, to have some way of knowing your blockchain, your database, was correct without having to trust a hash value from <em>anyone</em>. And there should be some way of knowing you have the correct blockchain that everyone else is using without having to trust some central authority to keep track of this. Bitcoin very elegantly solves both of these problems.</p>
                 
                   
                 
@@ -410,7 +413,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../hashing/" title="Hashing" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -419,7 +422,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Home
+                Hashing
               </span>
             </div>
           </a>
