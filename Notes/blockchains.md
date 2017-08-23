@@ -1,3 +1,9 @@
+## Conceptualisation
+
+A blockchain is a distributed, secure database or ledger. A blockchain can store transaction data or any other data you want.
+
+## Basic idea
+
 Take some chunk or 'block' of data, compute the hash for it, now take that hash value and put it in the next block. Repeat the process for each new block. Now anyone who looks at this sequence of blocks can be sure of their order of creation, as well as the contents of each block being unaltered in any way after the chain was created.
 
 Assuming the hash of at least the newest block is published somewhere trusted, then if an attacker tries to send you a copy of the blockchain with even a single bit changed in *any* block, no matter how far back, the hashes of all blocks following the change will not match.

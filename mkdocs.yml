@@ -22,10 +22,6 @@ pages:
     - 'Public Key Crypto': 'pubkey.md'
     - 'Hashing': 'hashing.md'
     - 'Blockchains': 'blockchains.md'
-- Bitcoin:
-    - 'Money': 'money.md'
-- Ethereum:
-    - 'Money': 'money.md'
 
 # options
 extra:
