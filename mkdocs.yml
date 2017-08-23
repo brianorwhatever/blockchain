@@ -17,14 +17,15 @@ docs_dir: Notes
 pages:
 - Home: 'index.md'
 - General:
-    - 'Hashing': 'money.md'
-    - 'Cryptography': 'money.md'
+    - 'Markets': 'markets.md'
+    - 'Money': 'money.md'
+    - 'Public Key Crypto': 'pubkey.md'
+    - 'Hashing': 'hashing.md'
+    - 'Blockchains': 'blockchains.md'
 - Bitcoin:
     - 'Money': 'money.md'
-    - 'Markets': 'markets.md'
 - Ethereum:
     - 'Money': 'money.md'
-    - 'Markets': 'markets.md'
 
 # options
 extra:

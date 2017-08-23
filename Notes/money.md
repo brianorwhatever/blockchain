@@ -1,22 +1,20 @@
+## Functions of Money
+
 The key functions of money are *medium of exchange*, *unit of account*, and *store of value*. If some material/medium/system can serve these functions and gains enough confidence and use, then it is as valid a form of money as any other.
 
-## Medium of Exchange
+### Medium of Exchange
 
 Medium of exchange just means that the money serves as the thing that people trade in place of actual goods. Rather than trading a pair of shoes for a chicken, you trade some money for the chicken. This is a massive gain in terms of ease-of-trade. To be a good medium of exchange a money should be portable, durable, fungible (any dollar is just as good as any other), scarce, and easily divisible.
 
-## Unit of Account
+### Unit of Account
 
 This is the ability to say a chicken is worth X dollars, a pair of shoes is worth Y dollars, rather than saying a chicken is worth Z pairs of shoes. So all goods and services are priced in terms of a common measure. This is extremely useful in determining how valuable something is in relation to everything else. This allows for all kinds of accounting and economic analysis.
 
-## Store of Value
+### Store of Value
 
-From Wikipedia:
-
-To act as a store of value, a money must be able to be reliably saved, stored, and retrieved…
+> To act as a store of value, a money must be able to be reliably saved, stored, and retrieved… (Wikipedia)
 
 It would be nice if the dollars you earned could be held for a long time and then used later.
-
-----
 
 ## Fiat
 

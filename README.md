@@ -11,10 +11,11 @@
 ### Basics
 - [x] Hashing
 - [x] Public key crypto
+- [x] Markets
+- [x] Money
 - [x] Blockchains
 
 ### Bitcoin
-- [x] Markets and Money
 - [ ] How Bitcoin Works (high level)
 - [ ] How Bitcoin Works (low level)
 
