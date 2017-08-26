@@ -300,6 +300,26 @@
     Authentication
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bitcoin-example" title="Bitcoin Example" class="md-nav__link">
+    Bitcoin Example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trust" title="Trust" class="md-nav__link">
+    Trust
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -363,6 +383,26 @@
     Authentication
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bitcoin-example" title="Bitcoin Example" class="md-nav__link">
+    Bitcoin Example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trust" title="Trust" class="md-nav__link">
+    Trust
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -382,11 +422,21 @@
                 
                   <h1>Public Key Crypto</h1>
                 
-                <p>Public key cryptography, or asymmetric cryptography, is what Bitcoin and others use in order to verify a transaction came from the account holder.</p>
-<p>Public key crypto allows <strong>authentication</strong> and <strong>encryption</strong> between parties which have never met, but most cryptocurrencies do not actually encrypt transaction data or any other data on their blockchains so we only need to worry about the authentication part for now.</p>
+                <p>Public key cryptography, or asymmetric cryptography, is what Bitcoin and others use in order to verify transactions.This tech is essential for cryptos to work.</p>
+<p>Public key crypto allows <strong>authentication</strong> and <strong>encryption</strong> between parties which have never met.</p>
+<p>Most cryptocurrencies do not actually encrypt transactions or any other data on the blockchain so we only need to worry about authentication for now.</p>
 <h2 id="authentication">Authentication</h2>
-<p>Produce your key-pair &#x2012; a public key which you can share with anyone, even publish to your website, and a private key which is kept private. Now you can produce a chunk of data, maybe a will, financial transaction, or any message, and use your private key to 'sign' this chunk of data. Recipients who receive the message can be certain that it came from you. More accurately they can be sure that someone with the private key, which corresponds to the public key that you published, signed the document.</p>
-
+<h3 id="bitcoin-example">Bitcoin Example</h3>
+<p>Let's say you want to create a Bitcoin 'account' and send some Bitcoin to someone. Here is a simplified explanation of what happens:</p>
+<ol>
+<li>Use wallet software to generate a key-pair. A key-pair consists of a public and private key. The public key is your 'account number', or address, and can be shared. The private key is the key that unlocks your money.</li>
+<li>Get some Bitcoin in that account.</li>
+<li>Use your wallet softare to create a transaction. This transaction will say 'send X BTC to <your address>'. The transaction will include your address.</li>
+<li>Sign the transaction. To sign it take the message and your private key and do crypto magic to produce a signature. The sig is unique to that transaction. The sig is a big number.</li>
+<li>Now other nodes can see the message (send X BTC to whoever), see your address (your pub key) and see your signature for that transaction. They can then check for themselves that given that message and your pub key, someone with the private key <strong>must</strong> have created that signature. And that signature was made for this exact transaction. </li>
+</ol>
+<p>That is what public key crypto can do.</p>
+<h3 id="trust">Trust</h3>
 <p>So as long as your public key is published somewhere that people can trust, you can send out signed messages on an <em>untrusted</em> network and others can be sure that the message came from you, and that it wasn't altered in any way. If you cannot, or do not want to associate a public key to your identity, you can still send out signed messages and recipients can verify that the message came from someone who holds the private key corresponding to some public key.</p>
                 
                   
