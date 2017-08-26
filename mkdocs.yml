@@ -16,12 +16,13 @@ site_favicon: 'img/favicon.png'
 docs_dir: Notes
 pages:
 - Home: 'index.md'
-- General:
-    - 'Markets': 'general/markets.md'
-    - 'Money': 'general/money.md'
-    - 'Public Key Crypto': 'general/pubkey.md'
-    - 'Hashing': 'general/hashing.md'
-    - 'Blockchains': 'general/blockchain.md'
+- Economics:
+    - 'Markets': 'economics/markets.md'
+    - 'Money': 'economics/money.md'
+- Basic Tech:
+    - 'Public Key Crypto': 'basic_tech/pubkey.md'
+    - 'Hashing': 'basic_tech/hashing.md'
+    - 'Blockchains': 'basic_tech/blockchain.md'
 
 # options
 extra:
