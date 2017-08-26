@@ -10,7 +10,7 @@
         <meta name="description" content="My notes on cryptocurrencies">
       
       
-        <link rel="canonical" href="https://jordanmmck.com/crypto_notes/general/hashing/">
+        <link rel="canonical" href="https://jordanmmck.com/crypto_notes/economics/money/">
       
       
         <meta name="author" content="Jordan McKinney">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Hashing - Crypto Notes</title>
+        <title>Money - Crypto Notes</title>
       
     
     
@@ -81,11 +81,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  General
+                  Economics
                 </span>
               
             
-            Hashing
+            Money
           
         </span>
       </div>
@@ -210,11 +210,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
-      General
+      Economics
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-2">
-        General
+        Economics
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -235,30 +235,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../money/" title="Money" class="md-nav__link">
-      Money
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../pubkey/" title="Public Key Crypto" class="md-nav__link">
-      Public Key Crypto
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -268,11 +244,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Hashing
+        Money
       </label>
     
-    <a href="./" title="Hashing" class="md-nav__link md-nav__link--active">
-      Hashing
+    <a href="./" title="Money" class="md-nav__link md-nav__link--active">
+      Money
     </a>
     
       
@@ -284,30 +260,64 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" title="Overview" class="md-nav__link">
-    Overview
+  <a href="#functions-of-money" title="Functions of Money" class="md-nav__link">
+    Functions of Money
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#properties-of-an-ideal-hash-function" title="Properties of an Ideal Hash Function" class="md-nav__link">
-    Properties of an Ideal Hash Function
+  <a href="#medium-of-exchange" title="Medium of Exchange" class="md-nav__link">
+    Medium of Exchange
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#digital-fingerprinting" title="Digital Fingerprinting" class="md-nav__link">
-    Digital Fingerprinting
+  <a href="#unit-of-account" title="Unit of Account" class="md-nav__link">
+    Unit of Account
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#hash-lists" title="Hash lists" class="md-nav__link">
-    Hash lists
+  <a href="#store-of-value" title="Store of Value" class="md-nav__link">
+    Store of Value
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fiat" title="Fiat" class="md-nav__link">
+    Fiat
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#centralisation" title="Centralisation" class="md-nav__link">
+    Centralisation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inflation" title="Inflation" class="md-nav__link">
+    Inflation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperinflation" title="Hyperinflation" class="md-nav__link">
+    Hyperinflation
   </a>
   
 </li>
@@ -326,13 +336,61 @@
   </li>
 
         
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Basic Tech
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Basic Tech
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
           
           
           
 
 
   <li class="md-nav__item">
-    <a href="../blockchain/" title="Blockchains" class="md-nav__link">
+    <a href="../../basic_tech/pubkey/" title="Public Key Crypto" class="md-nav__link">
+      Public Key Crypto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../basic_tech/hashing/" title="Hashing" class="md-nav__link">
+      Hashing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../basic_tech/blockchain/" title="Blockchains" class="md-nav__link">
       Blockchains
     </a>
   </li>
@@ -362,30 +420,64 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" title="Overview" class="md-nav__link">
-    Overview
+  <a href="#functions-of-money" title="Functions of Money" class="md-nav__link">
+    Functions of Money
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#properties-of-an-ideal-hash-function" title="Properties of an Ideal Hash Function" class="md-nav__link">
-    Properties of an Ideal Hash Function
+  <a href="#medium-of-exchange" title="Medium of Exchange" class="md-nav__link">
+    Medium of Exchange
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#digital-fingerprinting" title="Digital Fingerprinting" class="md-nav__link">
-    Digital Fingerprinting
+  <a href="#unit-of-account" title="Unit of Account" class="md-nav__link">
+    Unit of Account
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#hash-lists" title="Hash lists" class="md-nav__link">
-    Hash lists
+  <a href="#store-of-value" title="Store of Value" class="md-nav__link">
+    Store of Value
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fiat" title="Fiat" class="md-nav__link">
+    Fiat
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#centralisation" title="Centralisation" class="md-nav__link">
+    Centralisation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inflation" title="Inflation" class="md-nav__link">
+    Inflation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperinflation" title="Hyperinflation" class="md-nav__link">
+    Hyperinflation
   </a>
   
 </li>
@@ -410,40 +502,41 @@
               
                 
                 
-                  <h1>Hashing</h1>
+                  <h1>Money</h1>
                 
-                <p>Hash functions are the fundamental tools used to create blockchains and are critical to other aspects of cryptocurrencies including mining (for some cryptos).</p>
-<h2 id="overview">Overview</h2>
-<p>Cryptographic hash functions are one-way functions that map data of arbitrary size to some fixed-size output. So whether your input is 1 bit or 1 billion bits the output will be the same size.</p>
-<p>For example given the input: </p>
-<pre><code>hello
+                <h2 id="functions-of-money">Functions of Money</h2>
+<p>The key functions of money are <strong>medium of exchange</strong>, <strong>unit of account</strong>, and <strong>store of value</strong>. If some material/medium/system can serve these functions, and gains enough confidence and use, then it is as valid a form of money as any other.</p>
+<h3 id="medium-of-exchange">Medium of Exchange</h3>
+<p>Medium of exchange just means that the money serves as the thing that people trade in place of actual goods. Rather than trading a pair of shoes for a chicken, you trade some money for the chicken. This is a massive gain in terms of ease-of-trade. To be a good medium of exchange a money should be portable, durable, fungible (any dollar is just as good as any other), scarce, and easily divisible.</p>
+<h3 id="unit-of-account">Unit of Account</h3>
+<p>This is the ability to say a chicken is worth X dollars, a pair of shoes is worth Y dollars, rather than saying a chicken is worth Z pairs of shoes. So all goods and services are priced in terms of a common measure. This is obviously useful in determining how valuable something is in relation to everything else. This allows for all kinds of accounting and economic analysis.</p>
+<h3 id="store-of-value">Store of Value</h3>
+<blockquote>
+<p>To act as a store of value, a money must be able to be reliably saved, stored, and retrieved… (Wikipedia)</p>
+</blockquote>
+<p>It would be nice if the dollars you earned could be held for a long time and then used later.</p>
+<h2 id="fiat">Fiat</h2>
+<p>Fiat is government backed money. Usually a government will make it law that their fiat currency must be used for paying taxes, wages etc. and usually all businesses by law must accept fiat.</p>
+<p>We tend to think of fiat as paper money, but something like 90% of the fiat money in circulation only exists as numbers in accounts/databases and has no physical counterpart.</p>
+<p>Fiat has been criticised as being inflationary, and centralised.</p>
+<h3 id="centralisation">Centralisation</h3>
+<p>The amount of fiat that gets produced is controlled either directly by the government or indirectly through a sort of separate entity like the Federal Reserve. This organisation decides how much money will be produced, by whom, and in what manner.</p>
+<p>This centralisation represents some risk as the controlling organisation may be attacked or become corrupt. They may produce too much money too quickly, and the country could suffer hyper-inflation. This has happened in Austria, China, Germany, Greece, Zimbabwe and many other countries.</p>
+<h3 id="inflation">Inflation</h3>
+<p>The US and Canada aim for something like 2% annual inflation. What this means is that if there is a total of <code>X</code> Canadian dollars in circulation right now, then one year from now there will be <code>X*1.02</code> total dollars in circulation. So the total supply of money is increasing constantly.</p>
+<p>If you keep your money in a savings account you might get <code>.25%</code> interest or something like that, much less than the rate of inflation. So your money is devalued annually (relative to the total supply) by <code>1.75%</code>.</p>
+<p>One way to look at this is that 1.75% of the value of your money is skimmed off every year and sent to the banks or whoever is issuing the new money.</p>
+<h3 id="hyperinflation">Hyperinflation</h3>
+<p>Hyperinflation occurs when, for whatever reason, the rate of inflation gets completely out of control.</p>
+<p>Maybe the most well known example is in Zimbabwe where the Zimbabwe dollar (ZWL) went from:</p>
+<pre><code>1.25 ZWL = 1 USD
 </code></pre>
 
-<p>SHA-256 will output</p>
-<pre><code>0x2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824
+<p>to:</p>
+<pre><code>688,000,000,000 ZWL = 1 USD
 </code></pre>
 
-<p>Given the entirety of Wikipedia as input, the output would be the same size. The output, in the case of SHA-256, is an apparently random string of 256 bits.</p>
-<p>A given input will always map to the same output, and the output should appear completely random. The SHA-256 hash algorithm for example produces a 256-bit output. Therefore any given hash value is one of 2<sup>256</sup> possible outputs. There are something like 2<sup>260</sup> atoms in the universe so the chance of finding another input that produces that hash is basically zero.</p>
-<h3 id="properties-of-an-ideal-hash-function">Properties of an Ideal Hash Function</h3>
-<ul>
-<li><strong>Determinism</strong>: the same message always produces the same output</li>
-<li><strong>Quickness</strong>: it is quick to compute the hash for some input</li>
-<li><strong>Irreversibility</strong>: given some hash you can't figure out what the input was except by randomly guessing it and hashing the guess to see if it matches the target hash</li>
-<li><strong>Avalanche effect</strong>: even a small change to the input completely alters the output</li>
-<li><strong>Collision resistance</strong>: it is infeasible to find two messages that hash to the same value</li>
-</ul>
-<p>So given these properties, what good are they?</p>
-<h3 id="digital-fingerprinting">Digital Fingerprinting</h3>
-<p>The simplest application is <strong>digital fingerprinting</strong>. Take some chunk of data and hash it. The hash value will be (for all practical purposes) unique to that document.</p>
-<p>A website can then publish just the hash of a file and users can download the file, hash it themselves, and check that their hash matches the published hash. If their copy of the file has been altered in any way, even if just one bit is flipped, the hash value will not match. If the hash matches however, then the user can be sure their file is legit.</p>
-<p>This sort of independent integrity check is much better than going through the file chunk by chunk and asking the server if each chunk is correct.</p>
-<h3 id="hash-lists">Hash lists</h3>
-<p>This concept can be extended to <strong>hash lists</strong> to allow trustless peer to peer file sharing.</p>
-<p>Take a file, break it up into many small pieces. Hash each piece. Publish this relatively small hash list somewhere trusted. Now a peer in the network can accept a file piece from anyone, hash it; if the hash is found in the list then keep the piece, else discard.</p>
-<p>An attacker cannot create a malicious file piece that matches a hash in the list. This technique is used by Bittorrent.</p>
-<p>Even better we could hash the hash list itself to get a master hash or 'top hash'. We can then just publish the top hash and allow the peers to share hash lists. When a peer sends you the hash list, hash it, check if it matches the published top hash. If it matches then the hash list is legit and you can use it to start accepting blocks.</p>
-<p>Hash functions have many other applications (like hash tables!), but the most relevant to cryptocurrencies is the blockchain.</p>
+<p>They had <strong>100 trillion</strong> dollar bills!</p>
                 
                   
                 
@@ -462,7 +555,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../pubkey/" title="Public Key Crypto" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../markets/" title="Markets" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -471,19 +564,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Public Key Crypto
+                Markets
               </span>
             </div>
           </a>
         
         
-          <a href="../blockchain/" title="Blockchains" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../basic_tech/pubkey/" title="Public Key Crypto" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Blockchains
+                Public Key Crypto
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

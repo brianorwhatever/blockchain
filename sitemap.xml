@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://jordanmmck.com/crypto_notes/</loc>
-     <lastmod>2017-08-22</lastmod>
+     <lastmod>2017-08-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,32 +12,36 @@
     
         
     <url>
-     <loc>https://jordanmmck.com/crypto_notes/general/markets/</loc>
-     <lastmod>2017-08-22</lastmod>
+     <loc>https://jordanmmck.com/crypto_notes/economics/markets/</loc>
+     <lastmod>2017-08-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://jordanmmck.com/crypto_notes/general/money/</loc>
-     <lastmod>2017-08-22</lastmod>
+     <loc>https://jordanmmck.com/crypto_notes/economics/money/</loc>
+     <lastmod>2017-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://jordanmmck.com/crypto_notes/basic_tech/pubkey/</loc>
+     <lastmod>2017-08-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://jordanmmck.com/crypto_notes/general/pubkey/</loc>
-     <lastmod>2017-08-22</lastmod>
+     <loc>https://jordanmmck.com/crypto_notes/basic_tech/hashing/</loc>
+     <lastmod>2017-08-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://jordanmmck.com/crypto_notes/general/hashing/</loc>
-     <lastmod>2017-08-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://jordanmmck.com/crypto_notes/general/blockchain/</loc>
-     <lastmod>2017-08-22</lastmod>
+     <loc>https://jordanmmck.com/crypto_notes/basic_tech/blockchain/</loc>
+     <lastmod>2017-08-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
