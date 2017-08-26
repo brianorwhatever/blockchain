@@ -2,25 +2,35 @@
 
 Markets are very much relevant to cryptocurrencies.
 
-Bitcoin miners choose which transactions to include in their block based on the fees associated with the transactions. Pay a high fee and your transaction will get in. 
+Bitcoin miners choose which transactions to include in their block based on the fees associated with the transactions. Pay a high fee and your transaction will get in. This is a market.
 
 The decentralised internet will likely use a market system whereby your router routes packets based on the fee that they offer. In high demand periods the price per kilobyte will rise due to demand.
 
+Golem will attempt to create a market for computation whereby computers can offer up their resources for a price and buyers (users of that computation) can purchase it.
+
+Anywhere some kind of market exists cryptocurrencies may find application, and markets are everywhere.
+
 ## Conceptualisation
 
-Typically one good/service is not exchanged directly for another, rather they are exchanged for money. So money is the *medium of exchange* for a market. Money allows the market to fluidly operate.
+Typically one good/service is not exchanged directly for another, rather they are exchanged for money. So money is the **medium of exchange** for a market. Money allows the market to fluidly operate.
 
-Markets are decentralised, resource allocating systems.
+Markets are **decentralised, resource allocating systems**.
 
 ### Decentralisation
 
-They are decentralised in the sense that no one needs to oversee/control/govern the market in order for it to function. But even without a leader the market can intelligently allocate resources.
+They are decentralised in the sense that no one necessarily needs to oversee/control/govern the market in order for it to function. But even without a leader the market can intelligently allocate resources.
+
+Our current systems in fact *do* have governing bodies precisely because we can't currently write our laws/rules into the "code" that defines the market because most markets exist in the physical world.
+
+With cryptocurrencies we can make truly decentralised markets in the sense that the market rules are solidified into code and no governing body is needed at all to enforce those rules.
 
 ### Resource allocation
 
-If the market assigns a high price to some good then people will be incented obtain/produce more of that good. Material resources as well as human time and effort will be allocated to satisfying this demand in proportion to how highly the market values it.
+If the market assigns a high price to some good then people will be incented to obtain/produce more of that good. Material resources as well as human time and effort will be allocated to satisfying this demand in proportion to how highly the market values it.
 
-So a market is a way for people to collectively orchestrate themselves and direct their efforts toward whatever it is that they value.
+So a market can be a way for people to collectively orchestrate themselves and direct their efforts toward whatever it is that they value. This is a bottom up approach to human coordination that is *much* stronger than top down.
+
+The problem up until now is that it has not been possible to actually decide what we want to incentivize and create a market that achieves that. Partly because we can't just define arbitrary market rules and ensure that participants follow them without huge overhead.
 
 ## Price
 
@@ -34,8 +44,8 @@ The common example is pollution. Markets demand goods whose production pollutes 
 
 ## Efficiency
 
-Markets are efficient in the sense that they price goods, and therefore allocate resources more 'accurately' than any individual or group could manage.
+Markets are efficient in the sense that they price goods, and therefore allocate resources more 'accurately' than any individual or group could manage. If it were up to some group to decide what the 'correct' price of a commodity was, and all sellers had to follow it, they would likely either be too high and consumers would suffer the high price, be unable to buy, and sellers would likely make *less*; or price too low and sellers would suffer low profit and production would drop.
 
 ## Free markets
 
-A free market is one in which buyers and sellers can establish the proper price for things naturally without government interference. Supply and demand should function properly, and no collusion, monopoly etc. should take place.
+A free market is one in which buyers and sellers can establish the proper price for things naturally without government interference. Supply and demand should function properly, and no collusion, monopoly etc. should not take place.

@@ -1,6 +1,6 @@
 ## Functions of Money
 
-The key functions of money are **medium of exchange**, **unit of account**, and **store of value**. If some material/medium/system can serve these functions, and gains enough confidence and use, then it is as valid a form of money as any other.
+The key functions of money are **medium of exchange**, **unit of account**, and **store of value**. If some material/medium/system can serve these functions, and gains enough confidence and use, then it is as valid a form of money as any other (though it may or may not be recognized by a government, and may or may not be accepted by a vendor).
 
 ### Medium of Exchange
 
@@ -14,7 +14,7 @@ This is the ability to say a chicken is worth X dollars, a pair of shoes is wort
 
 > To act as a store of value, a money must be able to be reliably saved, stored, and retrieved… (Wikipedia)
 
-It would be nice if the dollars you earned could be held for a long time and then used later.
+So your money should be able to hold value over time and then be used later.
 
 ## Fiat
 
@@ -26,7 +26,7 @@ Fiat has been criticised as being inflationary, and centralised.
 
 ### Centralisation
 
-The amount of fiat that gets produced is controlled either directly by the government or indirectly through a sort of separate entity like the Federal Reserve. This organisation decides how much money will be produced, by whom, and in what manner.
+The amount of fiat that gets produced is controlled either directly by the government or indirectly through a somewhat separate entity like the Federal Reserve. This organisation decides how much money will be produced, by whom, and in what manner (printing cash, fractional lending etc).
 
 This centralisation represents some risk as the controlling organisation may be attacked or become corrupt. They may produce too much money too quickly, and the country could suffer hyper-inflation. This has happened in Austria, China, Germany, Greece, Zimbabwe and many other countries.
 
