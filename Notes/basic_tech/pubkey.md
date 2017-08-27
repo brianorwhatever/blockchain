@@ -6,17 +6,23 @@ Most cryptocurrencies do not actually encrypt transactions or any other data on 
 
 ## Authentication
 
-### Bitcoin Example
-Let's say you want to create a Bitcoin 'account' and send some Bitcoin to someone. Here is a simplified explanation of what happens:
+### Example
+Let's say you want to send a message to your friend over an untrusted network, and your friend needs to be able to tell for sure that the message came from you.
 
-1. Use wallet software to generate a key-pair. A key-pair consists of a public and private key. The public key is your 'account number', or address, and can be shared. The private key is the key that unlocks your money.
-2. Get some Bitcoin in that account.
-3. Use your wallet softare to create a transaction. This transaction will say 'send X BTC to (your address)'. The transaction will include your address.
-4. Sign the transaction. To sign it take the message and your private key and do crypto magic to produce a signature. The sig is unique to that transaction. The sig is a big number.
-5. Now other nodes can see the message (send X BTC to whoever), see your address (your pub key) and see your signature for that transaction. They can then check for themselves that given that message and your pub key, someone with the private key **must** have created that signature. And that signature was made for this exact transaction. 
+You and your friend have never met in person to exchange a shared secret, but your public key has been publicly shared.
 
-That is what public key crypto can do.
+Send:
 
-### Trust
+1. Generate a key-pair (a public and private key)
+2. Use your private key and the message to generate a signature
+3. Send the message and the signature
 
-So as long as your public key is published somewhere that people can trust, you can send out signed messages on an *untrusted* network and others can be sure that the message came from you, and that it wasn't altered in any way. If you cannot, or do not want to associate a public key to your identity, you can still send out signed messages and recipients can verify that the message came from someone who holds the private key corresponding to some public key.
+Recieve:
+
+1. Your friend sees the message and signature
+2. Your friend uses your public key and message (and crypto magic) to see if the signature is correct
+
+If the message was altered at all your they will know. If the signature was produced by someone without the private key they will know.
+
+## Bitcoin
+This is how Bitcoin and other cryptocurrencies verify transactions. You sign your transaction using your private key. Others then check that the signature is valid given your transaction data and your public key (your account address).
