@@ -82,7 +82,7 @@
         },
         {
             "location": "/basic_tech/blockchain/",
-            "text": "Conceptualisation\n\n\nUltimately a blockchain is a type of database.\n\n\nLike any database you can store whatever you want in it, but blockchains have some unique properties.\n\n\nHow they work\n\n\nThis\n video visually explains how blockchains work far better than I could explain in written form so I won't try.\n\n\nStructure\n\n\nBlockchains are append only.\n\n\nThe name 'blockchain' gives a great visual of their structure. It's a long chain of blocks where each block contains whatever data you want. Blocks get added onto the end of the chain, but you can never go back and change anything in older blocks.\n\n\nIf you were to change something a few blocks back then it would alter every subsequent block and everyone would immediately see that something had changed.",
+            "text": "Conceptualisation\n\n\nUltimately a blockchain is a type of database.\n\n\nLike any database you can store whatever you want in it, but blockchains have some unique properties.\n\n\nHow they work\n\n\nThe video below visually explains how blockchains work far better than I ever could in written form so I won't try.\n\n\n\n\nStructure\n\n\nBlockchains are append only.\n\n\nThe name 'blockchain' gives a great visual of their structure. It's a long chain of blocks where each block contains whatever data you want. Blocks get added onto the end of the chain, but you can never go back and change anything in older blocks.\n\n\nIf you were to change something a few blocks back then it would alter every subsequent block and everyone would immediately see that something had changed.",
             "title": "Blockchains"
         },
         {
@@ -92,7 +92,7 @@
         },
         {
             "location": "/basic_tech/blockchain/#how-they-work",
-            "text": "This  video visually explains how blockchains work far better than I could explain in written form so I won't try.",
+            "text": "The video below visually explains how blockchains work far better than I ever could in written form so I won't try.",
             "title": "How they work"
         },
         {
