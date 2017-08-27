@@ -202,66 +202,18 @@
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-    
-    <label class="md-nav__link" for="nav-2">
-      Economics
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        Economics
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../economics/markets/" title="Markets" class="md-nav__link">
-      Markets
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../economics/money/" title="Money" class="md-nav__link">
-      Money
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-2">
       Basic Tech
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         Basic Tech
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -273,8 +225,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../pubkey/" title="Public Key Crypto" class="md-nav__link">
-      Public Key Crypto
+    <a href="../hashing/" title="Hashing" class="md-nav__link">
+      Hashing
     </a>
   </li>
 
@@ -285,8 +237,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../hashing/" title="Hashing" class="md-nav__link">
-      Hashing
+    <a href="../pubkey/" title="Public Key Crypto" class="md-nav__link">
+      Public Key Crypto
     </a>
   </li>
 
@@ -327,8 +279,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-idea" title="Basic idea" class="md-nav__link">
-    Basic idea
+  <a href="#how-they-work" title="How they work" class="md-nav__link">
+    How they work
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure" title="Structure" class="md-nav__link">
+    Structure
   </a>
   
 </li>
@@ -339,6 +298,66 @@
   
 </nav>
     
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Cryptoeconomics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Cryptoeconomics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cryptoeconomics/markets/" title="Markets" class="md-nav__link">
+      Markets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cryptoeconomics/money/" title="Money" class="md-nav__link">
+      Money
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cryptoeconomics/networks/" title="Networks" class="md-nav__link">
+      Networks
+    </a>
   </li>
 
         
@@ -373,8 +392,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-idea" title="Basic idea" class="md-nav__link">
-    Basic idea
+  <a href="#how-they-work" title="How they work" class="md-nav__link">
+    How they work
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure" title="Structure" class="md-nav__link">
+    Structure
   </a>
   
 </li>
@@ -397,13 +423,14 @@
                   <h1>Blockchains</h1>
                 
                 <h2 id="conceptualisation">Conceptualisation</h2>
-<p>A blockchain is a distributed, secure database or ledger. A blockchain can store transaction data or any other data you want.</p>
-<p>An interesting aspect of a blockchain is that it is <em>ordered</em>. With most data structures it isn't really a sensible question to ask which part of the data structure was created first. Blockchains actually must be constructed in a particular order. Therefore they have some aspect of time encoded into them.</p>
-<h2 id="basic-idea">Basic idea</h2>
-<p>Take some chunk or 'block' of data, compute the hash for it, now take that hash value and put it in the next block. Repeat the process for each new block. Now anyone who looks at this sequence of blocks can be sure of their order of creation, as well as the contents of each block being unaltered in any way after the chain was created.</p>
-<p>Assuming the hash of at least the newest block is published somewhere trusted, then if an attacker tries to send you a copy of the blockchain with even a single bit changed in <em>any</em> block, no matter how far back, the hashes of all blocks following the change will not match.</p>
-<p>In addition to the previous block's hash, a block can contain any kind of data you want. In the case of Bitcoin the blocks contain transaction data. Attackers cannot go back to an old block and change a transaction, because doing so would cause all following block hashes to change. A blockchain could be made to store contracts, records of events, patents or anything else where having an unaltered history matters.</p>
-<p>This data structure can serve as a sort of shared database. It would be nice however, to have some way of knowing your blockchain, your database, was correct without having to trust a hash value from <em>anyone</em>. And there should be some way of knowing you have the correct blockchain that everyone else is using without having to trust some central authority to keep track of this. Bitcoin very elegantly solves both of these problems.</p>
+<p>Ultimately a blockchain is a type of database.</p>
+<p>Like any database you can store whatever you want in it, but blockchains have some unique properties.</p>
+<h2 id="how-they-work">How they work</h2>
+<p><a href="https://youtu.be/_160oMzblY8">This</a> video visually explains how blockchains work far better than I could explain in written form so I won't try.</p>
+<h2 id="structure">Structure</h2>
+<p>Blockchains are append only.</p>
+<p>The name 'blockchain' gives a great visual of their structure. It's a long chain of blocks where each block contains whatever data you want. Blocks get added onto the end of the chain, but you can never go back and change anything in older blocks.</p>
+<p>If you were to change something a few blocks back then it would alter every subsequent block and everyone would immediately see that something had changed.</p>
                 
                   
                 
@@ -422,7 +449,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../hashing/" title="Hashing" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../pubkey/" title="Public Key Crypto" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -431,11 +458,25 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Hashing
+                Public Key Crypto
               </span>
             </div>
           </a>
         
+        
+          <a href="../../cryptoeconomics/markets/" title="Markets" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Markets
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>

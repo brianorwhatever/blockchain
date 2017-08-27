@@ -10,7 +10,7 @@
         <meta name="description" content="My notes on cryptocurrencies">
       
       
-        <link rel="canonical" href="https://jordanmmck.com/crypto_notes/basic_tech/pubkey/">
+        <link rel="canonical" href="https://jordanmmck.com/crypto_notes/cryptoeconomics/money/">
       
       
         <meta name="author" content="Jordan McKinney">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Public Key Crypto - Crypto Notes</title>
+        <title>Money - Crypto Notes</title>
       
     
     
@@ -81,11 +81,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  Basic Tech
+                  Cryptoeconomics
                 </span>
               
             
-            Public Key Crypto
+            Money
           
         </span>
       </div>
@@ -202,12 +202,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
       Basic Tech
@@ -225,8 +223,70 @@
 
 
   <li class="md-nav__item">
-    <a href="../hashing/" title="Hashing" class="md-nav__link">
+    <a href="../../basic_tech/hashing/" title="Hashing" class="md-nav__link">
       Hashing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../basic_tech/pubkey/" title="Public Key Crypto" class="md-nav__link">
+      Public Key Crypto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../basic_tech/blockchain/" title="Blockchains" class="md-nav__link">
+      Blockchains
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Cryptoeconomics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Cryptoeconomics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../markets/" title="Markets" class="md-nav__link">
+      Markets
     </a>
   </li>
 
@@ -244,11 +304,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Public Key Crypto
+        Money
       </label>
     
-    <a href="./" title="Public Key Crypto" class="md-nav__link md-nav__link--active">
-      Public Key Crypto
+    <a href="./" title="Money" class="md-nav__link md-nav__link--active">
+      Money
     </a>
     
       
@@ -260,23 +320,103 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#authentication" title="Authentication" class="md-nav__link">
-    Authentication
+  <a href="#functions-of-money" title="Functions of Money" class="md-nav__link">
+    Functions of Money
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#bitcoin-example" title="Bitcoin Example" class="md-nav__link">
-    Bitcoin Example
+  <a href="#medium-of-exchange" title="Medium of Exchange" class="md-nav__link">
+    Medium of Exchange
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unit-of-account" title="Unit of Account" class="md-nav__link">
+    Unit of Account
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#store-of-value" title="Store of Value" class="md-nav__link">
+    Store of Value
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_2" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fiat" title="Fiat" class="md-nav__link">
+    Fiat
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#centralisation" title="Centralisation" class="md-nav__link">
+    Centralisation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#trust" title="Trust" class="md-nav__link">
-    Trust
+  <a href="#inflation" title="Inflation" class="md-nav__link">
+    Inflation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperinflation" title="Hyperinflation" class="md-nav__link">
+    Hyperinflation
   </a>
   
 </li>
@@ -301,67 +441,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../blockchain/" title="Blockchains" class="md-nav__link">
-      Blockchains
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
-      Cryptoeconomics
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        Cryptoeconomics
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../cryptoeconomics/markets/" title="Markets" class="md-nav__link">
-      Markets
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../cryptoeconomics/money/" title="Money" class="md-nav__link">
-      Money
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../cryptoeconomics/networks/" title="Networks" class="md-nav__link">
+    <a href="../networks/" title="Networks" class="md-nav__link">
       Networks
     </a>
   </li>
@@ -391,23 +471,103 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#authentication" title="Authentication" class="md-nav__link">
-    Authentication
+  <a href="#functions-of-money" title="Functions of Money" class="md-nav__link">
+    Functions of Money
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#bitcoin-example" title="Bitcoin Example" class="md-nav__link">
-    Bitcoin Example
+  <a href="#medium-of-exchange" title="Medium of Exchange" class="md-nav__link">
+    Medium of Exchange
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unit-of-account" title="Unit of Account" class="md-nav__link">
+    Unit of Account
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#store-of-value" title="Store of Value" class="md-nav__link">
+    Store of Value
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_2" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fiat" title="Fiat" class="md-nav__link">
+    Fiat
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#centralisation" title="Centralisation" class="md-nav__link">
+    Centralisation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#trust" title="Trust" class="md-nav__link">
-    Trust
+  <a href="#inflation" title="Inflation" class="md-nav__link">
+    Inflation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperinflation" title="Hyperinflation" class="md-nav__link">
+    Hyperinflation
   </a>
   
 </li>
@@ -432,24 +592,49 @@
               
                 
                 
-                  <h1>Public Key Crypto</h1>
+                  <h1>Money</h1>
                 
-                <p>Public key cryptography, or asymmetric cryptography, is what Bitcoin and others use in order to verify transactions.This tech is essential for cryptos to work.</p>
-<p>Public key crypto allows <strong>authentication</strong> and <strong>encryption</strong> between parties which have never met.</p>
-<p>Most cryptocurrencies do not actually encrypt transactions or any other data on the blockchain so we only need to worry about authentication for now.</p>
-<h2 id="authentication">Authentication</h2>
-<h3 id="bitcoin-example">Bitcoin Example</h3>
-<p>Let's say you want to create a Bitcoin 'account' and send some Bitcoin to someone. Here is a simplified explanation of what happens:</p>
-<ol>
-<li>Use wallet software to generate a key-pair. A key-pair consists of a public and private key. The public key is your 'account number', or address, and can be shared. The private key is the key that unlocks your money.</li>
-<li>Get some Bitcoin in that account.</li>
-<li>Use your wallet softare to create a transaction. This transaction will say 'send X BTC to (your address)'. The transaction will include your address.</li>
-<li>Sign the transaction. To sign it take the message and your private key and do crypto magic to produce a signature. The sig is unique to that transaction. The sig is a big number.</li>
-<li>Now other nodes can see the message (send X BTC to whoever), see your address (your pub key) and see your signature for that transaction. They can then check for themselves that given that message and your pub key, someone with the private key <strong>must</strong> have created that signature. And that signature was made for this exact transaction. </li>
-</ol>
-<p>That is what public key crypto can do.</p>
-<h3 id="trust">Trust</h3>
-<p>So as long as your public key is published somewhere that people can trust, you can send out signed messages on an <em>untrusted</em> network and others can be sure that the message came from you, and that it wasn't altered in any way. If you cannot, or do not want to associate a public key to your identity, you can still send out signed messages and recipients can verify that the message came from someone who holds the private key corresponding to some public key.</p>
+                <h2 id="functions-of-money">Functions of Money</h2>
+<p>The key functions of money are <strong>medium of exchange</strong>, <strong>unit of account</strong>, and <strong>store of value</strong>. If some material/medium/system can serve these functions, and gains enough confidence and use, then it is in principle as valid a form of money as any other.</p>
+<h3 id="medium-of-exchange">Medium of Exchange</h3>
+<p>Medium of exchange just means that the money serves as the thing that people trade in place of actual goods. </p>
+<p>To be a good medium of exchange a money should be portable, durable, fungible (any dollar is just as good as any other), scarce, and easily divisible.</p>
+<h4 id="example">Example</h4>
+<p>Rather than trading a pair of shoes for a chicken, you trade some money for the chicken and everyone else does the same.</p>
+<h3 id="unit-of-account">Unit of Account</h3>
+<p>Price everything in units of the money. So all goods and services are priced in terms of a common measure.</p>
+<h4 id="example_1">Example</h4>
+<p>This is the ability to say a chicken is worth X dollars, a pair of shoes is worth Y dollars, rather than saying a chicken is worth Z pairs of shoes. </p>
+<h3 id="store-of-value">Store of Value</h3>
+<blockquote>
+<p>To act as a store of value, a money must be able to be reliably saved, stored, and retrieved… (Wikipedia)</p>
+</blockquote>
+<p>So your money should be able to hold value over time and then be used later.</p>
+<h4 id="example_2">Example</h4>
+<p>Gold is good for store of value. Gold doesn't evaporate away and the supply doesn't inflate too much. People have valued it for thousands of years so it will probably remain valuable in 10 years or 50.</p>
+<h2 id="fiat">Fiat</h2>
+<p>Fiat is government-backed money. Usually a government will make it law that their fiat currency must be used for paying taxes, wages etc. and usually all businesses by law must accept fiat.</p>
+<p>We tend to think of fiat as paper money, but something like 90% of the fiat money in circulation only exists as numbers in accounts/databases and has no physical counterpart. The digital portion still counts as being part of the same fiat supply.</p>
+<p>Fiat has been criticised as being inflationary, and centralised.</p>
+<h3 id="centralisation">Centralisation</h3>
+<p>The amount of fiat that gets produced is controlled either directly by the government or kinda indirectly through a kinda separate entity like the Federal Reserve. </p>
+<p>This organisation decides how much money will be produced, by whom, and in what manner (printing cash, <a href="https://www.khanacademy.org/economics-finance-domain/macroeconomics/monetary-system-topic/fractional-reserve-banking-tut/v/overview-of-fractional-reserve-banking">fractional lending</a>, etc).</p>
+<p>This centralisation represents some risk as the controlling organisation may be attacked or become corrupt. They may produce too much money too quickly, and the country could suffer hyper-inflation. This has happened in Austria, China, Germany, Greece, Zimbabwe and many other countries.</p>
+<h3 id="inflation">Inflation</h3>
+<p>The US and Canada aim for something like 2% annual inflation. What this means is that if there is a total of <code>X</code> Canadian dollars in circulation right now, then one year from now there will be <code>X*1.02</code> total dollars in circulation. So the total supply of money is increasing constantly.</p>
+<p>If you keep your money in a savings account you might get <code>.25%</code> interest or something like that, much less than the rate of inflation. So your money is devalued annually (relative to the total supply) by <code>1.75%</code>.</p>
+<p>One way to look at this is that 1.75% of the value of your money is skimmed off every year and sent to the banks or whoever is issuing the new money.</p>
+<h3 id="hyperinflation">Hyperinflation</h3>
+<p>Hyperinflation occurs when, for whatever reason, the rate of inflation gets completely out of control.</p>
+<p>Maybe the most well known example is in Zimbabwe where the Zimbabwe dollar (ZWL) went from:</p>
+<pre><code>1.25 ZWL = 1 USD
+</code></pre>
+
+<p>to:</p>
+<pre><code>688,000,000,000 ZWL = 1 USD
+</code></pre>
+
+<p>They had <strong>100 trillion</strong> dollar bills!</p>
                 
                   
                 
@@ -468,7 +653,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../hashing/" title="Hashing" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../markets/" title="Markets" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -477,19 +662,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Hashing
+                Markets
               </span>
             </div>
           </a>
         
         
-          <a href="../blockchain/" title="Blockchains" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../networks/" title="Networks" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Blockchains
+                Networks
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
