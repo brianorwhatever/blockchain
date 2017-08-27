@@ -268,21 +268,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#bitcoin-example" title="Bitcoin Example" class="md-nav__link">
-    Bitcoin Example
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#trust" title="Trust" class="md-nav__link">
-    Trust
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bitcoin" title="Bitcoin" class="md-nav__link">
+    Bitcoin
+  </a>
   
 </li>
       
@@ -399,21 +399,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#bitcoin-example" title="Bitcoin Example" class="md-nav__link">
-    Bitcoin Example
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#trust" title="Trust" class="md-nav__link">
-    Trust
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bitcoin" title="Bitcoin" class="md-nav__link">
+    Bitcoin
+  </a>
   
 </li>
       
@@ -438,18 +438,23 @@
 <p>Public key crypto allows <strong>authentication</strong> and <strong>encryption</strong> between parties which have never met.</p>
 <p>Most cryptocurrencies do not actually encrypt transactions or any other data on the blockchain so we only need to worry about authentication for now.</p>
 <h2 id="authentication">Authentication</h2>
-<h3 id="bitcoin-example">Bitcoin Example</h3>
-<p>Let's say you want to create a Bitcoin 'account' and send some Bitcoin to someone. Here is a simplified explanation of what happens:</p>
+<h3 id="example">Example</h3>
+<p>Let's say you want to send a message to your friend over an untrusted network, and your friend needs to be able to tell for sure that the message came from you.</p>
+<p>You and your friend have never met in person to exchange a shared secret, but your public key has been publicly shared.</p>
+<p>Send:</p>
 <ol>
-<li>Use wallet software to generate a key-pair. A key-pair consists of a public and private key. The public key is your 'account number', or address, and can be shared. The private key is the key that unlocks your money.</li>
-<li>Get some Bitcoin in that account.</li>
-<li>Use your wallet softare to create a transaction. This transaction will say 'send X BTC to (your address)'. The transaction will include your address.</li>
-<li>Sign the transaction. To sign it take the message and your private key and do crypto magic to produce a signature. The sig is unique to that transaction. The sig is a big number.</li>
-<li>Now other nodes can see the message (send X BTC to whoever), see your address (your pub key) and see your signature for that transaction. They can then check for themselves that given that message and your pub key, someone with the private key <strong>must</strong> have created that signature. And that signature was made for this exact transaction. </li>
+<li>Generate a key-pair (a public and private key)</li>
+<li>Use your private key and the message to generate a signature</li>
+<li>Send the message and the signature</li>
 </ol>
-<p>That is what public key crypto can do.</p>
-<h3 id="trust">Trust</h3>
-<p>So as long as your public key is published somewhere that people can trust, you can send out signed messages on an <em>untrusted</em> network and others can be sure that the message came from you, and that it wasn't altered in any way. If you cannot, or do not want to associate a public key to your identity, you can still send out signed messages and recipients can verify that the message came from someone who holds the private key corresponding to some public key.</p>
+<p>Recieve:</p>
+<ol>
+<li>Your friend sees the message and signature</li>
+<li>Your friend uses your public key and message (and crypto magic) to see if the signature is correct</li>
+</ol>
+<p>If the message was altered at all your they will know. If the signature was produced by someone without the private key they will know.</p>
+<h2 id="bitcoin">Bitcoin</h2>
+<p>This is how Bitcoin and other cryptocurrencies verify transactions. You sign your transaction using your private key. Others then check that the signature is valid given your transaction data and your public key (your account address).</p>
                 
                   
                 
