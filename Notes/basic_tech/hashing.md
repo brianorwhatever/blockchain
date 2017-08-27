@@ -1,7 +1,6 @@
 Hash functions are a fundamental tool for blockchains, and are used in many other areas of cryptocurrencies. They are also used all over the place in computer science, and are pretty amazing little pieces of digital machinery.
 
 ## Definition
-
 Cryptographic hash functions are one-way functions that map data of arbitrary size to some fixed-size output. So whether your input is 1 bit or 1 billion bits the output will be the same size.
 
 A hash function can be viewed as a black box, where given some input like the example below, the output is fixed-size, and random looking.
@@ -20,7 +19,6 @@ Given the entirety of Wikipedia as input, the output would be the same size, but
 Note: Bitcoin uses SHA-256 in it's mining algorithm. Also, it's called SHA-256 because it outputs 256 bits.
 
 ### Properties of an Ideal Hash Function
-
 * **Determinism**: the same message always produces the same output
 * **Quickness**: it is quick to compute the hash for some input
 * **Irreversibility**: given some hash you can't figure out what the input was except by randomly guessing it and hashing the guess to see if it matches the target hash (the universe would end before you succeeded)
@@ -44,7 +42,6 @@ Users can then download the file, and hash it themselves using the same algorith
 That way they user knows the file wasn't altered in transit, or some virus on their computer didn't inject anything after it downloaded. The user could also download the file from any site, even an untrusted one. If they hash it and it matches the published hash then their file is legit.
 
 ### Hash lists
-
 This concept can be extended to **hash lists** to allow trustless peer to peer file sharing.
 
 #### Example

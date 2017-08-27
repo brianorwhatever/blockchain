@@ -5,7 +5,6 @@ Public key crypto allows **authentication** and **encryption** between parties w
 Most cryptocurrencies do not actually encrypt transactions or any other data on the blockchain so we only need to worry about authentication for now.
 
 ## Authentication
-
 ### Example
 Let's say you want to send a message to your friend over an untrusted network, and your friend needs to be able to tell for sure that the message came from you.
 

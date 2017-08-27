@@ -37,17 +37,13 @@ So a market can be a way for people to collectively orchestrate themselves and d
 One of the things that markets do is price goods/services. The mechanism by which this is done is supply and demand. The market should determine the proper price for a good/service such that the 'correct' amount of effort/resources are allocated to producing it.
 
 ## Externalities
-
 Sometimes producing a good/service will have some impact on another party that did not necessarily have a say in the exchange. Externalities may be 'unpriced' in the sense that the damage/benefit was not priced in when the transaction happened.
 
 ### Example
-
 The common example is pollution. Markets demand goods whose production pollutes the environment. People who had no part in the exchange may suffer the consequences of the pollution. It may also cost future generations huge amounts of money to fix. Neither of these were priced into the intial transaction.
 
 ## Efficiency
-
 Markets are efficient in the sense that they price goods, and therefore allocate resources more 'accurately' than any individual or group could manage.
 
 ## Free markets
-
 A free market is one in which buyers and sellers can establish the proper price for things naturally without government interference. Supply and demand should function properly, and no collusion, monopoly etc. should not take place.

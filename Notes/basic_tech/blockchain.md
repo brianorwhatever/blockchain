@@ -1,11 +1,9 @@
 ## Conceptualisation
-
 Ultimately a blockchain is a type of database.
 
 Like any database you can store whatever you want in it, but blockchains have some unique properties.
 
 ## How they work
-
 The video below visually explains how blockchains work far better than I ever could in written form so I won't try.
 
 [![Blockchain Demo](http://img.youtube.com/vi/_160oMzblY8/0.jpg)](https://youtu.be/_160oMzblY8)
