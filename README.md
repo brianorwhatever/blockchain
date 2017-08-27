@@ -1,5 +1,7 @@
 # Crypto Notes
 
+Check it out [here](http://www.jordanmmck.com/crypto_notes/basic_tech/)
+
 ## To do
 - logo
 - make nav always expanded
