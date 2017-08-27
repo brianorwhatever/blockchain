@@ -1,6 +1,8 @@
 > A market is one of the many varieties of systems, institutions, procedures, social relations and infrastructures whereby parties engage in exchange (Wikipedia)
 
-Markets are very much relevant to cryptocurrencies.
+Market forces are more powerful than any government, corporation or other entity in the world. Markets are very much relevant to cryptocurrencies.
+
+## Examples in Crypto
 
 Bitcoin miners choose which transactions to include in their block based on the fees associated with the transactions. Pay a high fee and your transaction will get in. This is a market.
 
@@ -8,13 +10,13 @@ The decentralised internet will likely use a market system whereby your router r
 
 Golem will attempt to create a market for computation whereby computers can offer up their resources for a price and buyers (users of that computation) can purchase it.
 
-Anywhere some kind of market exists cryptocurrencies may find application, and markets are everywhere.
+Anywhere some kind of market exists cryptocurrencies may be able to bolster/redefine them. They will likely also ena ble entirely new markets to emerge.
 
 ## Conceptualisation
 
-Typically one good/service is not exchanged directly for another, rather they are exchanged for money. So money is the **medium of exchange** for a market. Money allows the market to fluidly operate.
+Typically one good/service is not exchanged directly for another, rather they are exchanged for money. So money, in whatever form, is the **medium of exchange** for a market. Money allows the market to fluidly operate.
 
-Markets are **decentralised, resource allocating systems**.
+Markets are meritorious, **decentralised, resource allocating systems**.
 
 ### Decentralisation
 
@@ -30,8 +32,6 @@ If the market assigns a high price to some good then people will be incented to 
 
 So a market can be a way for people to collectively orchestrate themselves and direct their efforts toward whatever it is that they value. This is a bottom up approach to human coordination that is *much* stronger than top down.
 
-The problem up until now is that it has not been possible to actually decide what we want to incentivize and create a market that achieves that. Partly because we can't just define arbitrary market rules and ensure that participants follow them without huge overhead.
-
 ## Price
 
 One of the things that markets do is price goods/services. The mechanism by which this is done is supply and demand. The market should determine the proper price for a good/service such that the 'correct' amount of effort/resources are allocated to producing it.
@@ -40,11 +40,13 @@ One of the things that markets do is price goods/services. The mechanism by whic
 
 Sometimes producing a good/service will have some impact on another party that did not necessarily have a say in the exchange. Externalities may be 'unpriced' in the sense that the damage/benefit was not priced in when the transaction happened.
 
+### Example
+
 The common example is pollution. Markets demand goods whose production pollutes the environment. People who had no part in the exchange may suffer the consequences of the pollution. It may also cost future generations huge amounts of money to fix. Neither of these were priced into the intial transaction.
 
 ## Efficiency
 
-Markets are efficient in the sense that they price goods, and therefore allocate resources more 'accurately' than any individual or group could manage. If it were up to some group to decide what the 'correct' price of a commodity was, and all sellers had to follow it, they would likely either be too high and consumers would suffer the high price, be unable to buy, and sellers would likely make *less*; or price too low and sellers would suffer low profit and production would drop.
+Markets are efficient in the sense that they price goods, and therefore allocate resources more 'accurately' than any individual or group could manage.
 
 ## Free markets
 

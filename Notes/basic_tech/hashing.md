@@ -1,47 +1,63 @@
-Hash functions are the fundamental tools used to create blockchains and are critical to other aspects of cryptocurrencies including mining (for some cryptos).
+Hash functions are a fundamental tool for blockchains, and are used in many other areas of cryptocurrencies. They are also used all over the place in computer science, and are pretty amazing little pieces of digital machinery.
 
-## Overview
+## Definition
 
 Cryptographic hash functions are one-way functions that map data of arbitrary size to some fixed-size output. So whether your input is 1 bit or 1 billion bits the output will be the same size.
 
-For example given the input: 
+A hash function can be viewed as a black box, where given some input like the example below, the output is fixed-size, and random looking.
+
+### Example
+Given the string:
 ```
 hello
 ```
-SHA-256 will output
+The SHA-256 hash algorithm will output:
 ```
 0x2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824
 ```
-Given the entirety of Wikipedia as input, the output would be the same size. The output, in the case of SHA-256, is an apparently random string of 256 bits.
+Given the entirety of Wikipedia as input, the output would be the same size, but the characters would be different.
 
-A given input will always map to the same output, and the output should appear completely random. The SHA-256 hash algorithm for example produces a 256-bit output. Therefore any given hash value is one of 2<sup>256</sup> possible outputs. There are something like 2<sup>260</sup> atoms in the universe so the chance of finding another input that produces that hash is basically zero.
+Note: Bitcoin uses SHA-256 in it's mining algorithm. Also, it's called SHA-256 because it outputs 256 bits.
 
 ### Properties of an Ideal Hash Function
 
 * **Determinism**: the same message always produces the same output
 * **Quickness**: it is quick to compute the hash for some input
-* **Irreversibility**: given some hash you can't figure out what the input was except by randomly guessing it and hashing the guess to see if it matches the target hash
+* **Irreversibility**: given some hash you can't figure out what the input was except by randomly guessing it and hashing the guess to see if it matches the target hash (the universe would end before you succeeded)
 * **Avalanche effect**: even a small change to the input completely alters the output
-* **Collision resistance**: it is infeasible to find two messages that hash to the same value
+* **Collision resistance**: it is infeasible to find two messages that hash to the same value (sun explodes before you succeed)
 
 So given these properties, what good are they?
 
+## Applications
 ### Digital Fingerprinting
 
-The simplest application is **digital fingerprinting**. Take some chunk of data and hash it. The hash value will be (for all practical purposes) unique to that document.
+The simplest application is **digital fingerprinting**. Take some chunk of data and hash it. The hash value will be unique to that document.
 
-A website can then publish just the hash of a file and users can download the file, hash it themselves, and check that their hash matches the published hash. If their copy of the file has been altered in any way, even if just one bit is flipped, the hash value will not match. If the hash matches however, then the user can be sure their file is legit.
+#### Example
+Suppose the Ubuntu website wants to let people download the Ubuntu image file.
 
-This sort of independent integrity check is much better than going through the file chunk by chunk and asking the server if each chunk is correct.
+They can offer the download on the site, but also publish the hash of it.
+
+Users can then download the file, and hash it themselves using the same algorithm. If their hash matches the published one then every single bit in their file matches exactly the official file.
+
+That way they user knows the file wasn't altered in transit, or some virus on their computer didn't inject anything after it downloaded. The user could also download the file from any site, even an untrusted one. If they hash it and it matches the published hash then their file is legit.
 
 ### Hash lists
 
 This concept can be extended to **hash lists** to allow trustless peer to peer file sharing.
 
-Take a file, break it up into many small pieces. Hash each piece. Publish this relatively small hash list somewhere trusted. Now a peer in the network can accept a file piece from anyone, hash it; if the hash is found in the list then keep the piece, else discard.
+#### Example
+1. Take a file, perhaps a movie, break it up into many small pieces.
+2. Hash each piece.
+3. Publish this relatively small list of hashes somewhere trusted. 
+4. Now a peer in the network can accept a file piece from anyone, hash it; if the hash is found in the list then keep the piece, else discard.
 
-An attacker cannot create a malicious file piece that matches a hash in the list. This technique is used by Bittorrent.
+An attacker cannot create a malicious file piece that matches a hash in the list. It's just too hard to find something that hashes to one of those hashes in the list, except the actual file piece. 
 
-Even better we could hash the hash list itself to get a master hash or 'top hash'. We can then just publish the top hash and allow the peers to share hash lists. When a peer sends you the hash list, hash it, check if it matches the published top hash. If it matches then the hash list is legit and you can use it to start accepting blocks.
+This is basically what Bittorrent does.
 
-Hash functions have many other applications (like hash tables!), but the most relevant to cryptocurrencies is the blockchain.
+#### Improvement
+Even better we could hash the *hash-list itself* to get a master-hash or 'top-hash'.
+
+We can then just publish the top-hash and allow the peers to share hash-lists. When a peer sends you the hash-list, hash it, check if it matches the published top-hash. If it matches then the hash-list you were given is legit and you can use it to start accepting blocks.

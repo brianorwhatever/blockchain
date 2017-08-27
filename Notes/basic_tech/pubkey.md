@@ -11,7 +11,7 @@ Let's say you want to create a Bitcoin 'account' and send some Bitcoin to someon
 
 1. Use wallet software to generate a key-pair. A key-pair consists of a public and private key. The public key is your 'account number', or address, and can be shared. The private key is the key that unlocks your money.
 2. Get some Bitcoin in that account.
-3. Use your wallet softare to create a transaction. This transaction will say 'send X BTC to <your address>'. The transaction will include your address.
+3. Use your wallet softare to create a transaction. This transaction will say 'send X BTC to (your address)'. The transaction will include your address.
 4. Sign the transaction. To sign it take the message and your private key and do crypto magic to produce a signature. The sig is unique to that transaction. The sig is a big number.
 5. Now other nodes can see the message (send X BTC to whoever), see your address (your pub key) and see your signature for that transaction. They can then check for themselves that given that message and your pub key, someone with the private key **must** have created that signature. And that signature was made for this exact transaction. 
 
