@@ -11,6 +11,13 @@ The cars on road system constitute a network, the internet connected computers o
 
 These networks are systems of human organisation, and are incredibly useful.
 
+## The Money System
+A given money system is of course a big network where everyone 'believes' in the money.
+
+When you go to your job and do some work, you contribute some actual value to the network, and in return you get some money. 
+
+This is basically an IOU from the network. The money itself doesn't have instrinsic value, but you can use it later to get something of real value from the network.
+
 ## Better Networks
 One of the great challenges of human history has been to build better, more efficient, more sophisticated networks.
 

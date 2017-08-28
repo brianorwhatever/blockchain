@@ -39,3 +39,4 @@ Check it out [here](http://www.jordanmmck.com/crypto_notes/basic_tech/)
   - [ ] POW
   - [ ] POS
   - [ ] Frontier, Homestead, Metropolis, Serenity
+- [ ] Development

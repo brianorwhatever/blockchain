@@ -1,3 +1,20 @@
+## Conceptualisation
+
+### The Money Network
+A given money system is a big network consisting of people who use and believe in the money.
+
+#### Money as IOUs
+When you go to your job and do some work, you contribute some actual value to the network, and in return you get some money.
+
+This is basically an IOU from the network. The money itself doesn't have instrinsic value, but you can use it later to get something of real value from the network. So that cash you received is really just saying the network owes you X amount which you can redeem for whatever you want.
+
+#### Reverse Ledger
+Given that you have this big network of people who want to trade stuff with each other, one approach to keeping track of how much the network owes each person would be to maintain a big ledger. 
+
+There could be an entry for every person with their balance. This would be hard to maintain though.
+
+Another approach is to use money. Money acts as a 'reverse ledger'. You don't have to keep track of names and balances, just let people trade the money.
+
 ## Functions of Money
 The key functions of money are **medium of exchange**, **unit of account**, and **store of value**. If some material/medium/system can serve these functions, and gains enough confidence and use, then it is in principle as valid a form of money as any other.
 

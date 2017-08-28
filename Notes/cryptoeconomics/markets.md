@@ -16,7 +16,7 @@ Anywhere some kind of market exists cryptocurrencies may be able to bolster/rede
 
 Typically one good/service is not exchanged directly for another, rather they are exchanged for money. So money, in whatever form, is the **medium of exchange** for a market. Money allows the market to fluidly operate.
 
-Markets are meritorious, **decentralised, resource allocating systems**.
+Markets are meritorious, decentralised, resource allocating systems.
 
 ### Decentralisation
 
@@ -35,6 +35,15 @@ So a market can be a way for people to collectively orchestrate themselves and d
 ## Price
 
 One of the things that markets do is price goods/services. The mechanism by which this is done is supply and demand. The market should determine the proper price for a good/service such that the 'correct' amount of effort/resources are allocated to producing it.
+
+### Pricing Accurately
+Suppose you have a stock for some company in a stock market.
+
+If all the participants in the market are aware of the company, understand what the company does, have familiarity with the companies publicly available accounting, and are aware of the company's direction and long term potential, then the market can accurately price the stock. 
+
+With complete information the market may still under or overvalue the stock due to the feedback loop nature of stock markets, but they will be much closer to the true value.
+
+If however some/all participants are lacking information then the stock is very likely to be incorrectly priced.
 
 ## Externalities
 Sometimes producing a good/service will have some impact on another party that did not necessarily have a say in the exchange. Externalities may be 'unpriced' in the sense that the damage/benefit was not priced in when the transaction happened.

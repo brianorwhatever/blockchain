@@ -24,6 +24,8 @@ pages:
     - 'Markets': 'cryptoeconomics/markets.md'
     - 'Money': 'cryptoeconomics/money.md'
     - 'Networks': 'cryptoeconomics/networks.md'
+# - Cryptocurrencies High-level:
+#     - 'Byzantine Generals Problem': 'crypto_highlevel/byzantine.md'
 
 # options
 extra:

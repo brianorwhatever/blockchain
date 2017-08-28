@@ -1,0 +1,5 @@
+A Sybil attack is an attack where a single adversary is controlling multiple nodes on a network. It is unknown to the network that the nodes are controlled by the same adversarial entity. For example, an adversary can spawn up multiple computers, virtual machines, and IP addresses. They can create multiple accounts with different usernames and e-mail addresses and pretend that they all exist in different countries.
+
+Avoiding Sybil attacks is a difficult problem. In centralized systems they are typically avoided through heuristics that do not provide cryptographic assurance of Sybil resilience. For example, a centralized entity may try to avoid Sybil attacks by requiring that an individual IP cannot create more than a specific number of user accounts in a given time interval.
+
+Sybil attacks are avoided in Bitcoin by requiring block generation ability to be proportional to computational power available through the proof-of-work mechanism. That way, an adversary is limited in how many blocks they can produce. This provides strong cryptographic guarantees of Sybil resilience.
