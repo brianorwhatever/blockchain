@@ -29,9 +29,9 @@ pages:
     - 'Sybil Attacks': 'crypto_highlevel/sybil.md'
 - Applications:
     - 'Notable Projects': 'applications/projects.md'
-    - 'Decentralized Internet': 'applications/dec_internet.md'
-    - 'Decentralized Storage': 'applications/dec_storage.md'
-    - 'Decentralized Computing': 'applications/dec_compute.md'
+    - 'Decentralized Internet': 'applications/internet.md'
+    - 'Decentralized Storage': 'applications/storage.md'
+    - 'Decentralized Computing': 'applications/compute.md'
 
 # options
 extra:
