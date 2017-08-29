@@ -22,10 +22,9 @@ Check it out [here](http://www.jordanmmck.com/crypto_notes/basic_tech/)
 - [x] Byzantine generals
 - [x] Sybil attacks
 
-### Application
-- [ ] Golem
-- [ ] Sia
-- [ ] Gnosis
+### Applications
+- [x] Notable projects
+- [ ] Potential applications
 
 ### Bitcoin
 - [ ] How Bitcoin Works (high level)
