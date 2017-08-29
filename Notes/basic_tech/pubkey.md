@@ -17,7 +17,7 @@ You and your friend have never met in person to exchange a shared secret, but yo
 2. Use your private key and the message to generate a signature
 3. Send the message and the signature
 
-**Recieve**:
+**Receive**:
 
 1. Your friend sees the message and signature
 2. Your friend uses your public key and message (and crypto magic) to see if the signature is correct
