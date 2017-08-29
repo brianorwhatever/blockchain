@@ -2,11 +2,11 @@
 site_name: Crypto Notes
 site_description: 'My notes on cryptocurrencies'
 site_author: 'Jordan McKinney'
-site_url: 'https://jordanmmck.com/crypto_notes'
+site_url: 'https://jordanmmck.com/blockchain'
 
 # repo
-repo_name: 'jordanmmck/crypto_notes'
-repo_url: 'https://github.com/jordanmmck/crypto_notes'
+repo_name: 'jordanmmck/blockchain_notes'
+repo_url: 'https://github.com/jordanmmck/blockchain_notes'
 
 # theme
 theme: readthedocs

@@ -3,7 +3,7 @@ A distributed system like Bitcoin has a bunch of nodes scattered all over the wo
 
 But how can some random node trust that the block info that it receives wasn't just made up by some attacker?
 
-This is essentially the **Two Generals Problem**, or **Byzantine Generals Problem**.
+This is essentially the **Two Generals Problem**, or in the more general case **Byzantine Generals Problem**.
 
 ## The Problem
 Suppose an army splits into two in order to surround a city. Each army is controlled by a general. The generals must decide on what day they will attack.
