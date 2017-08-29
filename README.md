@@ -27,6 +27,7 @@ Check it out [here](http://www.jordanmmck.com/crypto_notes/basic_tech/)
 - [x] Decentralised Internet
 - [x] Decentralised Storage
 - [x] Decentralised Compute
+- [x] Financial Markets
 
 ### Bitcoin
 - [ ] How Bitcoin Works (high level)
