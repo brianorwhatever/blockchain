@@ -1,9 +1,13 @@
+## Unused Storage
+Similar to how a large percentage of the world's computing resources are sitting idle at any given time, a large portion of the world's storage is unused.
 
-The same system would exist for storage. Computers could offer their storage space for 'mining' purposes. And of course you could have your machine intelligently use the extra space to make you money. It too would be a market. Though perhaps you would agree to store a file for 24h or something and not just drop everything if prices go up for some new data.
+Filecoin, Sia and Storj are all attempting to build platforms for decentralised storage markets.
 
-So files would flow through the system like a fluid. If a bunch of people in an area are demanding the same video file you don't want to have to keep sending it from the source, if the source if far away. What you want is to have the file only come in from the source once, get stored on some harddrives, then serve from there as demand increases. You basically want to never have to go backward. So if anyone near me gets the file I get it from them.
+## Mining
+'Miners' will be able to earn the coin corresponding to the network by renting out their harddrive space. They may also be paid more depending on how quickly they can respond to a request for a piece of a file.
 
-There will be great algorithmic improvements made to this system. This will be an area where hard computer science will be able to make huge efficiency gains. 
+## Buying
+Users who wish to store files on the network will perhaps be able to choose a availabilty-tier where users needing high availabilty would pay more per TB.
 
-So we can decentralise networking.
-
+## Privacy
+Files can be broken up into chunks, encrypted and then distributed across the network. Files chunks would also likely be replicated across nodes so that if some nodes fail or become unavailable, the file can still be retrieved.
