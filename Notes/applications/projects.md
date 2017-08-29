@@ -32,30 +32,25 @@ Like ethereum but not Turing complete. Big emphasis on governance being built in
 
 Distributed computing framework. Will allow computers/nodes to sell their computing power in a market. Possible difficulties in anonymizing the computing work sent to the nodes.
 
-## Internet
-**IPFS**
-
-Interplanetary File Storage. 'A peer-to-peer hypermedia protocol to make the web faster, safer, and more open.'
-
-Each file and all the blocks in it are hashed. Duplication is reduced/removed. When requesting a file you ask the network to find the files corresponding to some hash.
-
 ## Communications
 **Status**
 
 Wallet/browser/chat-app for ethereum. Chat with people, exchange money with them. Purchase things I assume. Also apply for job and share your credentials. No middleman. Also make small purchases like coffee.
 
 ## Storage
+**IPFS**
+
+Interplanetary File Storage. 'A peer-to-peer hypermedia protocol to make the web faster, safer, and more open.'
+
+Each file and all the blocks in it are hashed. Duplication is reduced/removed. When requesting a file you ask the network to find the files corresponding to some hash.
+
 **Sia**
 
 Decentralised storage. Breaks files into chunks, encrypts, distributes. Aiming to replace dropbox/s3. Anyone can make siacoin by renting out hdd. Claimed storage cost of $2/TB/month. Multi-region redundancy.
 
-**Maidsafe**
-
-same as sia I think.
-
 **Storj**
 
-same as sia I think.
+Same as sia I think.
 
 ## Organization
 **Factom**

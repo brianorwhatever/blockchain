@@ -24,7 +24,9 @@ Check it out [here](http://www.jordanmmck.com/crypto_notes/basic_tech/)
 
 ### Applications
 - [x] Notable projects
-- [ ] Potential applications
+- [x] Decentralised Internet
+- [x] Decentralised Storage
+- [x] Decentralised Compute
 
 ### Bitcoin
 - [ ] How Bitcoin Works (high level)
