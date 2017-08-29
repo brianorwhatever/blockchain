@@ -27,6 +27,8 @@ pages:
 - Cryptocurrencies High-level:
     - 'Two Generals Problem': 'crypto_highlevel/byzantine.md'
     - 'Sybil Attacks': 'crypto_highlevel/sybil.md'
+- Applications:
+    - 'Notable Projects': 'applications/projects.md'
 
 # options
 extra:

@@ -4,7 +4,6 @@ Check it out [here](http://www.jordanmmck.com/crypto_notes/basic_tech/)
 
 ## To do
 - logo
-- make nav always expanded
 - markdown extensions
 - add analytics?
 
@@ -20,8 +19,13 @@ Check it out [here](http://www.jordanmmck.com/crypto_notes/basic_tech/)
 - [x] Blockchains
 
 ### Crypto high level
-- [ ] Byzantine generals
-- [ ] Sybil attacks
+- [x] Byzantine generals
+- [x] Sybil attacks
+
+### Application
+- [ ] Golem
+- [ ] Sia
+- [ ] Gnosis
 
 ### Bitcoin
 - [ ] How Bitcoin Works (high level)
