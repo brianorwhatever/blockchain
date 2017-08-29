@@ -41,7 +41,7 @@ They can offer the download on the site, but also publish the hash of it.
 
 Users can then download the file, and hash it themselves using the same algorithm. If their hash matches the published one then every single bit in their file matches exactly the official file.
 
-That way they user knows the file wasn't altered in transit, or some virus on their computer didn't inject anything after it downloaded. The user could also download the file from any site, even an untrusted one. If they hash it and it matches the published hash then their file is legit.
+That way the user knows the file wasn't altered in transit, or some virus on their computer didn't inject anything after it downloaded. The user could also download the file from any site, even an untrusted one. If they hash it and it matches the published hash then their file is legit.
 
 ### Hash lists
 This concept can be extended to **hash lists** to allow trustless peer to peer file sharing.
