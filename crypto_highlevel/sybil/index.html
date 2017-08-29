@@ -9,7 +9,7 @@
   <meta name="author" content="Jordan McKinney">
   <link rel="shortcut icon" href="../../img/favicon.png">
   
-  <title>Public Key Crypto - Crypto Notes</title>
+  <title>Sybil Attacks - Crypto Notes</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Public Key Crypto";
-    var mkdocs_page_input_path = "basic_tech/pubkey.md";
-    var mkdocs_page_url = "/basic_tech/pubkey/";
+    var mkdocs_page_name = "Sybil Attacks";
+    var mkdocs_page_input_path = "crypto_highlevel/sybil.md";
+    var mkdocs_page_url = "/crypto_highlevel/sybil/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -59,24 +59,15 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../hashing/">Hashing</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">Public Key Crypto</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#authentication">Authentication</a></li>
-    
-
-    <li class="toctree-l3"><a href="#bitcoin">Bitcoin</a></li>
-    
-
-    </ul>
+    <a class="" href="../../basic_tech/hashing/">Hashing</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../blockchain/">Blockchains</a>
+    <a class="" href="../../basic_tech/pubkey/">Public Key Crypto</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basic_tech/blockchain/">Blockchains</a>
                 </li>
     </ul>
 	    </li>
@@ -106,11 +97,20 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../crypto_highlevel/byzantine/">Two Generals Problem</a>
+    <a class="" href="../byzantine/">Two Generals Problem</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../../crypto_highlevel/sybil/">Sybil Attacks</a>
+    <a class="current" href="./">Sybil Attacks</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#sybil-attacks-in-bitcoin">Sybil Attacks in Bitcoin</a></li>
+    
+
+    <li class="toctree-l3"><a href="#bitcoin-solution">Bitcoin Solution</a></li>
+    
+
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -137,11 +137,11 @@
     
       
         
-          <li>Basic Tech &raquo;</li>
+          <li>Cryptocurrencies High-level &raquo;</li>
         
       
     
-    <li>Public Key Crypto</li>
+    <li>Sybil Attacks</li>
     <li class="wy-breadcrumbs-aside">
       
         <a href="https://github.com/jordanmmck/crypto_notes/"> Edit on jordanmmck/crypto_notes</a>
@@ -153,27 +153,15 @@
           <div role="main">
             <div class="section">
               
-                <p>Public key cryptography, or asymmetric cryptography, is what Bitcoin and others use in order to verify transactions.This tech is essential for cryptos to work.</p>
-<p>Public key crypto allows <strong>authentication</strong> and <strong>encryption</strong> between parties which have never met.</p>
-<p>Most cryptocurrencies do not actually encrypt transactions or any other data on the blockchain so we only need to worry about authentication for now.</p>
-<h2 id="authentication">Authentication</h2>
-<p><strong>Example</strong></p>
-<p>Let's say you want to send a message to your friend over an untrusted network, and your friend needs to be able to tell for sure that the message came from you.</p>
-<p>You and your friend have never met in person to exchange a shared secret, but your public key has been publicly shared.</p>
-<p><strong>Send</strong>:</p>
-<ol>
-<li>Generate a key-pair (a public and private key)</li>
-<li>Use your private key and the message to generate a signature</li>
-<li>Send the message and the signature</li>
-</ol>
-<p><strong>Recieve</strong>:</p>
-<ol>
-<li>Your friend sees the message and signature</li>
-<li>Your friend uses your public key and message (and crypto magic) to see if the signature is correct</li>
-</ol>
-<p>If the message was altered at all they will know. If the signature was produced by someone without the private key they will know.</p>
-<h2 id="bitcoin">Bitcoin</h2>
-<p>This is how Bitcoin and other cryptocurrencies verify transactions. You sign your transaction using your private key, others then check that the signature is valid given your transaction data and your public key (your account address).</p>
+                <h2 id="sybil-attacks-in-bitcoin">Sybil Attacks in Bitcoin</h2>
+<p>The mining process of Bitcoin and other cryptocurrencies can be viewed as a lottery where one of the nodes in the network is randomly selected to put forth the next block in the blockchain.</p>
+<p>But if you simply randomly select one of the nodes, what is to stop some attacker from spinning up thousands/millions of nodes (using virtual machines with different IPs or something) in order to have a much higher chance of winning the lottery?</p>
+<p>This is a sybil attack in the context of cryptocurrencies.</p>
+<p>If you were able to reliably win the lottery you could double-spend and do all kinds of other nefarious things. This is a really tough problem because in the digital world practically everything can be arbitrarily copied.</p>
+<h2 id="bitcoin-solution">Bitcoin Solution</h2>
+<p>The solution that Satoshi came up with for Bitcoin was basically to, rather than allocate one 'lottery ticket' per node, instead allocate one lottery ticket per unit of computation.</p>
+<p>Since doing a computation uses electricity, hardware and time resources you can't just arbitrarily replicate these lottery tickets - they cost you in the real world.</p>
+<p>This is implemented in the Proof of Work mining algorithm.</p>
               
             </div>
           </div>
@@ -181,10 +169,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../blockchain/" class="btn btn-neutral float-right" title="Blockchains">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../hashing/" class="btn btn-neutral" title="Hashing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../byzantine/" class="btn btn-neutral" title="Two Generals Problem"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -210,10 +196,8 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../hashing/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../byzantine/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../blockchain/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

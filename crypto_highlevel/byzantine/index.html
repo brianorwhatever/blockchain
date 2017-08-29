@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Jordan McKinney">
+  <link rel="shortcut icon" href="../../img/favicon.png">
+  
+  <title>Two Generals Problem - Crypto Notes</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Two Generals Problem";
+    var mkdocs_page_input_path = "crypto_highlevel/byzantine.md";
+    var mkdocs_page_url = "/crypto_highlevel/byzantine/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Crypto Notes</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basic Tech</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../basic_tech/hashing/">Hashing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basic_tech/pubkey/">Public Key Crypto</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basic_tech/blockchain/">Blockchains</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Cryptoeconomics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../cryptoeconomics/markets/">Markets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../cryptoeconomics/money/">Money</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../cryptoeconomics/networks/">Networks</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Cryptocurrencies High-level</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">Two Generals Problem</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#sharing-blocks-in-bitcoin">Sharing Blocks in Bitcoin</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-problem">The Problem</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-solution">The Solution</a></li>
+    
+
+    <li class="toctree-l3"><a href="#bitcoin">Bitcoin</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sybil/">Sybil Attacks</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Crypto Notes</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Cryptocurrencies High-level &raquo;</li>
+        
+      
+    
+    <li>Two Generals Problem</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/jordanmmck/crypto_notes/"> Edit on jordanmmck/crypto_notes</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="sharing-blocks-in-bitcoin">Sharing Blocks in Bitcoin</h2>
+<p>A distributed system like Bitcoin has a bunch of nodes scattered all over the world with no central leader. When a new block is created by a given node, it needs to be able to propagate this info to all other nodes.</p>
+<p>But how can some random node trust that the block info that it receives wasn't just made up by some attacker?</p>
+<p>This is essentially the <strong>Two Generals Problem</strong>, or <strong>Byzantine Generals Problem</strong>.</p>
+<h2 id="the-problem">The Problem</h2>
+<p>Suppose an army splits into two in order to surround a city. Each army is controlled by a general. The generals must decide on what day they will attack.</p>
+<p>If they attack on the same day they will take the city. If they attack on different days they will be defeated.</p>
+<p>Since they are spread out they must communicate via messenger. Unfortunately the messenger cannot be trusted. He could be bribed by the city to alter his message.</p>
+<p>So there is a consensus problem. How do the general arrive at consensus about when to attack when they must use an unreliable communication channel?</p>
+<h2 id="the-solution">The Solution</h2>
+<p>It has actually been proved that there is no solution that will guarantee perfect coordination. But there are solutions that offer a high probability of coordination in certain situations.</p>
+<p>So general A writes a message 'attack Monday' and sends it to general B. The problem is that since this message is just a simple string, it can easily be changed to 'attack Tuesday' by an attacker.</p>
+<p>But suppose that the generals agreed ahead of time that each message would include a nonce (a random number) and that they would only accept messages where the hash of the message and nonce started with X number of zeroes.</p>
+<p>So to create a message you write your message, include a nonce, then hash it to see if the hash starts with X zeroes. If it doesn't, which it probably won't, increment your nonce and hash it again. Repeat until the hash starts with X zeroes.</p>
+<p>When a general receives a message the first thing they do is hash it to verify the hash starts with X zeroes. If it doesn't they just ignore it.</p>
+<p>So if an attacker wants to alter your message, they will also need to find a new nonce such that the message plus nonce hashes to something starting with X zeroes.</p>
+<p>This is certainly not impossible to do, but now the attacker needs to put in a huge amount of work if they want to falsify the message.</p>
+<p>If the armies have a great deal more computing power than the attacker then they can agree on a high number of zeroes that the message must hash to. Then it will be infeasible for an attacker with much less computing power to alter a message and find a valid nonce for it.</p>
+<h2 id="bitcoin">Bitcoin</h2>
+<p>So in Bitcoin the Bitcoin nodes are the generals/armies and the untrusted messenger is the Internet.</p>
+<p>To simplify things a bit, an attacker needs to have more computing power than the rest of the network combined in order to reliably falsify blocks.</p>
+<p>For more details see the Bitcoin page [in progress].</p>
+<p><strong>Source</strong></p>
+<p>Most of the info on this page was based on the very good video linked below. I've attempted to summarize as much as possible but check it out for more detail.</p>
+<p><a href="https://youtu.be/kE51N84hBxU"><img alt="Byzantine Generals" src="http://img.youtube.com/vi/kE51N84hBxU/0.jpg" /></a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../sybil/" class="btn btn-neutral float-right" title="Sybil Attacks">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../cryptoeconomics/networks/" class="btn btn-neutral" title="Networks"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../cryptoeconomics/networks/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../sybil/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>
