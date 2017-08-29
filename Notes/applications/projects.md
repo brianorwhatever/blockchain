@@ -32,6 +32,13 @@ Like ethereum but not Turing complete. Big emphasis on governance being built in
 
 Distributed computing framework. Will allow computers/nodes to sell their computing power in a market. Possible difficulties in anonymizing the computing work sent to the nodes.
 
+## Internet
+**IPFS**
+
+Interplanetary File Storage. 'A peer-to-peer hypermedia protocol to make the web faster, safer, and more open.'
+
+Each file and all the blocks in it are hashed. Duplication is reduced/removed. When requesting a file you ask the network to find the files corresponding to some hash.
+
 ## Communications
 **Status**
 
