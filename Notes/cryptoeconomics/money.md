@@ -24,12 +24,14 @@ Medium of exchange just means that the money serves as the thing that people tra
 To be a good medium of exchange a money should be portable, durable, fungible (any dollar is just as good as any other), scarce, and easily divisible.
 
 **Example**
+
 Rather than trading a pair of shoes for a chicken, you trade some money for the chicken and everyone else does the same.
 
 ### Unit of Account
 Price everything in units of the money. So all goods and services are priced in terms of a common measure.
 
 **Example**
+
 This is the ability to say a chicken is worth X dollars, a pair of shoes is worth Y dollars, rather than saying a chicken is worth Z pairs of shoes. 
 
 ### Store of Value
@@ -38,6 +40,7 @@ This is the ability to say a chicken is worth X dollars, a pair of shoes is wort
 So your money should be able to hold value over time and then be used later.
 
 **Example**
+
 Gold is good for store of value. Gold doesn't evaporate away and the supply doesn't inflate too much. People have valued it for thousands of years so it will probably remain valuable in 10 years or 50.
 
 ## Fiat
