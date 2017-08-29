@@ -1,5 +1,15 @@
-A Sybil attack is an attack where a single adversary is controlling multiple nodes on a network. It is unknown to the network that the nodes are controlled by the same adversarial entity. For example, an adversary can spawn up multiple computers, virtual machines, and IP addresses. They can create multiple accounts with different usernames and e-mail addresses and pretend that they all exist in different countries.
+## Sybil Attacks in Bitcoin
+The mining process of Bitcoin and other cryptocurrencies can be viewed as a lottery where one of the nodes in the network is randomly selected to put forth the next block in the blockchain.
 
-Avoiding Sybil attacks is a difficult problem. In centralized systems they are typically avoided through heuristics that do not provide cryptographic assurance of Sybil resilience. For example, a centralized entity may try to avoid Sybil attacks by requiring that an individual IP cannot create more than a specific number of user accounts in a given time interval.
+But if you simply randomly select one of the nodes, what is to stop some attacker from spinning up thousands/millions of nodes (using virtual machines with different IPs or something) in order to have a much higher chance of winning the lottery?
 
-Sybil attacks are avoided in Bitcoin by requiring block generation ability to be proportional to computational power available through the proof-of-work mechanism. That way, an adversary is limited in how many blocks they can produce. This provides strong cryptographic guarantees of Sybil resilience.
+This is a sybil attack in the context of cryptocurrencies.
+
+If you were able to reliably win the lottery you could double-spend and do all kinds of other nefarious things. This is a really tough problem because in the digital world practically everything can be arbitrarily copied.
+
+## Bitcoin Solution
+The solution that Satoshi came up with for Bitcoin was basically to, rather than allocate one 'lottery ticket' per node, instead allocate one lottery ticket per unit of computation.
+
+Since doing a computation uses electricity, hardware and time resources you can't just arbitrarily replicate these lottery tickets - they cost you in the real world.
+
+This is implemented in the Proof of Work mining algorithm.

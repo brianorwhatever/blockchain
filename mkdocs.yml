@@ -9,7 +9,7 @@ repo_name: 'jordanmmck/crypto_notes'
 repo_url: 'https://github.com/jordanmmck/crypto_notes'
 
 # theme
-theme: material
+theme: readthedocs
 site_favicon: 'img/favicon.png'
 
 # layout
@@ -24,8 +24,9 @@ pages:
     - 'Markets': 'cryptoeconomics/markets.md'
     - 'Money': 'cryptoeconomics/money.md'
     - 'Networks': 'cryptoeconomics/networks.md'
-# - Cryptocurrencies High-level:
-#     - 'Byzantine Generals Problem': 'crypto_highlevel/byzantine.md'
+- Cryptocurrencies High-level:
+    - 'Two Generals Problem': 'crypto_highlevel/byzantine.md'
+    - 'Sybil Attacks': 'crypto_highlevel/sybil.md'
 
 # options
 extra:

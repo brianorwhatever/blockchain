@@ -2,7 +2,7 @@ Many apsects of human organisation and cooperation can be viewed as networks. Hu
 
 Naval Ravikant talks about this idea quite a bit. Check [this](https://hackernoon.com/reflections-on-the-best-blockchain-tweets-ever-written-d488af960d4f) post for some exposition on some of his views.
 
-### Examples
+**Examples**
 All the people using a particular form of money make up a network. All the people participating in an economy make up a network. The residents of a city or country make up a network. These networks obviously overlap quite a bit.
 
 The people involved in the iPhone supply chain form a network by virtue of their all contributing to that one product. But many of those people also work to produce other products, so they are also part of those networks as well.

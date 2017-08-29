@@ -5,7 +5,8 @@ Cryptographic hash functions are one-way functions that map data of arbitrary si
 
 A hash function can be viewed as a black box, where given some input like the example below, the output is fixed-size, and random looking.
 
-### Example
+**Example**
+
 Given the string:
 ```
 hello
@@ -32,7 +33,8 @@ So given these properties, what good are they?
 
 The simplest application is **digital fingerprinting**. Take some chunk of data and hash it. The hash value will be unique to that document.
 
-#### Example
+**Example**
+
 Suppose the Ubuntu website wants to let people download the Ubuntu image file.
 
 They can offer the download on the site, but also publish the hash of it.
@@ -44,7 +46,8 @@ That way they user knows the file wasn't altered in transit, or some virus on th
 ### Hash lists
 This concept can be extended to **hash lists** to allow trustless peer to peer file sharing.
 
-#### Example
+**Example**
+
 1. Take a file, perhaps a movie, break it up into many small pieces.
 2. Hash each piece.
 3. Publish this relatively small list of hashes somewhere trusted. 
@@ -58,3 +61,6 @@ This is basically what Bittorrent does.
 Even better we could hash the *hash-list itself* to get a master-hash or 'top-hash'.
 
 We can then just publish the top-hash and allow the peers to share hash-lists. When a peer sends you the hash-list, hash it, check if it matches the published top-hash. If it matches then the hash-list you were given is legit and you can use it to start accepting blocks.
+
+### Blockchains
+The most relevant application of hash functions to cryptocurrencies is of course the blockchain. Watch the video on the blockchain page for a visual explanation.

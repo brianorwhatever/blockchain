@@ -48,7 +48,8 @@ If however some/all participants are lacking information then the stock is very 
 ## Externalities
 Sometimes producing a good/service will have some impact on another party that did not necessarily have a say in the exchange. Externalities may be 'unpriced' in the sense that the damage/benefit was not priced in when the transaction happened.
 
-### Example
+**Example**
+
 The common example is pollution. Markets demand goods whose production pollutes the environment. People who had no part in the exchange may suffer the consequences of the pollution. It may also cost future generations huge amounts of money to fix. Neither of these were priced into the intial transaction.
 
 ## Efficiency
