@@ -9,7 +9,7 @@ repo_name: 'jordanmmck/blockchain'
 repo_url: 'https://github.com/jordanmmck/blockchain'
 
 # theme
-theme: readthedocs
+theme: material
 site_favicon: 'img/favicon.png'
 
 # layout
