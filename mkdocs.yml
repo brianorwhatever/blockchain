@@ -5,8 +5,8 @@ site_author: 'Jordan McKinney'
 site_url: 'https://jordanmmck.com/blockchain'
 
 # repo
-repo_name: 'jordanmmck/blockchain_notes'
-repo_url: 'https://github.com/jordanmmck/blockchain_notes'
+repo_name: 'jordanmmck/blockchain'
+repo_url: 'https://github.com/jordanmmck/blockchain'
 
 # theme
 theme: readthedocs
