@@ -30,6 +30,7 @@ pages:
 - Applications:
     - 'Notable Projects': 'applications/projects.md'
     - 'Decentralized Internet': 'applications/dec_internet.md'
+    - 'Decentralized Storage': 'applications/dec_storage.md'
     - 'Decentralized Computing': 'applications/dec_compute.md'
 
 # options
